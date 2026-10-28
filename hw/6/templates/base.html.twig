@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Регистрация{% endblock %}</title>
+        {% block stylesheets %}
+            <style>
+                body { font-family: sans-serif; margin: 40px; max-width: 480px; }
+                label { display: block; margin-top: 12px; }
+                input { width: 100%; padding: 6px; font-family: inherit; }
+                button { margin-top: 16px; padding: 6px 14px; }
+                ul { padding-left: 18px; }
+                .error { color: #c00; }
+                .success { color: #0a0; }
+                .hint { color: #777; font-size: 90%; }
+            </style>
+        {% endblock %}
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+    </body>
+</html>

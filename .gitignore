@@ -1,0 +1,10 @@
+vendor/
+var/
+.env.local
+.env.*.local
+/hw/1/
+/hw/2/
+/hw/3/
+/hw/4/
+/hw/5/
+/cw/

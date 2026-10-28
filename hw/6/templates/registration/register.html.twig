@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Регистрация</h1>
+
+    {% for message in app.flashes('success') %}
+        <p class="success">{{ message }}</p>
+    {% endfor %}
+
+    {{ form_start(form) }}
+        {{ form_errors(form) }}
+
+        {{ form_row(form.email) }}
+        {{ form_row(form.name) }}
+        {{ form_row(form.plainPassword.first) }}
+        {{ form_row(form.plainPassword.second) }}
+
+        <p class="hint">Не короче 8 символов, минимум 3 буквы, 2 цифры и 1 специальный символ.</p>
+
+        <button type="submit">Зарегистрироваться</button>
+    {{ form_end(form) }}
+{% endblock %}
